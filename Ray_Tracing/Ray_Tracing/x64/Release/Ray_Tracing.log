@@ -1,0 +1,16 @@
+﻿  Compiling CUDA source file kernel.cu...
+  
+  D:\Visual_Studio_Project\Ray_Tracing\Ray_Tracing>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\bin\nvcc.exe" -gencode=arch=compute_86,code=\"sm_86,compute_86\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\bin\HostX64\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\include"     --keep-dir x64\Release  -maxrregcount=0   --machine 64 --compile -cudart static    -DWIN32 -DWIN64 -DNDEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /FS   /MD " -Xcompiler "/Fdx64\Release\vc143.pdb" -o D:\Visual_Studio_Project\Ray_Tracing\Ray_Tracing\x64\Release\kernel.cu.obj "D:\Visual_Studio_Project\Ray_Tracing\Ray_Tracing\kernel.cu" 
+CUDACOMPILE : ptxas warning : Stack size for entry function '_Z12create_worldPP8hittableS1_PP6cameraiiP17curandStateXORWOWi' cannot be statically determined
+CUDACOMPILE : ptxas warning : Stack size for entry function '_Z6renderP4vec3iiiPP6cameraPP8hittableP17curandStateXORWOW' cannot be statically determined
+  kernel.cu
+  tmpxft_00002a0c_00000000-7_kernel.cudafe1.cpp
+D:\Visual_Studio_Project\Ray_Tracing\Ray_Tracing\vec3.h(54): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+D:\Visual_Studio_Project\Ray_Tracing\Ray_Tracing\vec3.h(133): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+D:\Visual_Studio_Project\Ray_Tracing\Ray_Tracing\EasyBMP.hpp(344): warning C4244: =: преобразование "int64_t" в "int", возможна потеря данных
+D:\Visual_Studio_Project\Ray_Tracing\Ray_Tracing\EasyBMP.hpp(353): warning C4244: =: преобразование "int64_t" в "unsigned int", возможна потеря данных
+D:\Visual_Studio_Project\Ray_Tracing\Ray_Tracing\EasyBMP.hpp(354): warning C4244: =: преобразование "int64_t" в "unsigned int", возможна потеря данных
+     Создается библиотека D:\Visual_Studio_Project\Ray_Tracing\x64\Release\Ray_Tracing.lib и объект D:\Visual_Studio_Project\Ray_Tracing\x64\Release\Ray_Tracing.exp
+LINK : warning LNK4098: библиотека по умолчанию "LIBCMT" конфликтует с использованием других библиотек; используйте /NODEFAULTLIB:library
+  LINK : указан параметр /LTCG, но не требуется создание кода; удалите /LTCG из командной строки компоновки для повышения производительности компоновщика
+  Ray_Tracing.vcxproj -> D:\Visual_Studio_Project\Ray_Tracing\x64\Release\Ray_Tracing.exe
