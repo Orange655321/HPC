@@ -3,5 +3,7 @@
 А также работа выполнена блогодаря статье [Accelerated Ray Tracing in One Weekend in CUDA](https://developer.nvidia.com/blog/accelerated-ray-tracing-cuda/).
 
 ## Результаты
-![image](image_final_1.ppm)
+
+![image](out.bmp)
+
 Итоговое изображение будет сохранено в файлах с расшиернием *.bmp и *.ppm.
